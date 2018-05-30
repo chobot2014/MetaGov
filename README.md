@@ -12,5 +12,5 @@ sudo apt-get install dotnet-sdk-2.1.200
 
 make sure you have npm installed
 
-navigate to MetaGov directory
-dotnet run --project MetaGovAPI.sln
+navigate to MetaGovAPI directory
+dotnet run
