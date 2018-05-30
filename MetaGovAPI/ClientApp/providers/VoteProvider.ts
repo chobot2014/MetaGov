@@ -6,8 +6,8 @@ export class VoteProvider extends BaseProvider {
         super();        
     }
 
-    public voteTest(id: string, onDone: Function) {        
-        fetch(this._baseUrl + '/Vote/Test', { body: JSON.stringify({ voteID: id }) })
+    public voteTest(id: string, onDone: Function) {
+        fetch('/Vote/Test', { body: JSON.stringify({ voteID: id }) })
             .then(response => response.json())
             .then(data => {
                 onDone(data.VoteTestResult);
