@@ -3,16 +3,15 @@
 
 export class VoteProvider extends BaseProvider {
     constructor() {
-        super();
-
-        
+        super();        
     }
 
-    getVoteResults(): Promise<string> {
-        fetch(_baseUrl = '/Vote/GetResults')
-            .then(response => response.json() as Promise<WeatherForecast[]>)
+    public voteTest(id: string, onDone: Function) {        
+        fetch(this._baseUrl + '/Vote/Test', { body: JSON.stringify({ voteID: id }) })
+            .then(response => response.json())
             .then(data => {
-                this.setState({ forecasts: data, loading: false });
+                onDone(data.VoteTestResult);
             });
     }
+
 }

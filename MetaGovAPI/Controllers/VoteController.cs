@@ -8,62 +8,12 @@ namespace MetaGovAPI.Controllers
 {
     [Route("api/[controller]")]
     public class VoteController : Controller
-    {
+    {      
         [HttpGet]
-        public ActionResult TestMethod()
+        public ActionResult Test(string voteID)
         {
-            return Json(new { SomeValue = "someValue" });
-        }
-        
-        [HttpGet]
-        public ActionResult TestMethod2(int someNum)
-        {
-            return Json(new { SomeValue = "someValue"+ someNum });
-        }
-
-        [HttpGet]
-        public ActionResult GetVoteStatus(string voteID)
-        {
-            
+            return Json(new { VoteTestResult = "Vote Test good!" + voteID });
         }
         
     }
-
-
-
-
-    //public class SampleDataController : Controller
-    //{
-    //    private static string[] Summaries = new[]
-    //    {
-    //        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    //    };
-
-    //    [HttpGet("[action]")]
-    //    public IEnumerable<WeatherForecast> WeatherForecasts()
-    //    {
-    //        var rng = new Random();
-    //        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-    //        {
-    //            DateFormatted = DateTime.Now.AddDays(index).ToString("d"),
-    //            TemperatureC = rng.Next(-20, 55),
-    //            Summary = Summaries[rng.Next(Summaries.Length)]
-    //        });
-    //    }
-
-    //    public class WeatherForecast
-    //    {
-    //        public string DateFormatted { get; set; }
-    //        public int TemperatureC { get; set; }
-    //        public string Summary { get; set; }
-
-    //        public int TemperatureF
-    //        {
-    //            get
-    //            {
-    //                return 32 + (int)(TemperatureC / 0.5556);
-    //            }
-    //        }
-    //    }
-    //}
 }
