@@ -20,8 +20,9 @@ namespace MetaGovVote
         }
     }
 
-    public class MetaGovVoteProcessor {
-
+    public class MetaGovVoteProcessor
+    {
+        
         public MetaGovVoteProcessor(IEnumerable<Ballot> ballots, IEnumerable<MetaGovVoteProcessorTask> tasks)
         {
             
