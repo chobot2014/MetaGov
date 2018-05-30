@@ -16,7 +16,11 @@ namespace MetaGovVote
         MetaGovVoteProcessorTask(MetaGovVoteProcessorTaskType type)
         {
             _type = type;
+        }
 
+        public bool ExecuteTaskOnBlocks(ref IEnumerable<VoteBlock> blocks)
+        {
+            throw new NotImplementedException();
         }
     }
 

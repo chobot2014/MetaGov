@@ -4,13 +4,15 @@ using System.Text;
 
 namespace MetaGovVote
 {
-    interface IVoteRepository
+    class VoteRepository
     {
-        
-    }
-
-    class VoteRepository : IVoteRepository
-    {
-
+        public static VoteBlockChain GetVoteChainFromRepository(long ID)
+        {
+            throw new NotImplementedException();
+        }
+        public static bool AddVoteChainToRepository(VoteBlockChain chain)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

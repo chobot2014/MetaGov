@@ -7,7 +7,7 @@ namespace MetaGovVote
     class VoteBlockChain
     {
         private string _id;
-        private List<VoteBlock> _chain;  
+        private List<VoteBlock> _chain;
 
         VoteBlockChain()
         {
