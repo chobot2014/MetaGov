@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaGovAPI", "MetaGovAPI\MetaGovAPI.csproj", "{41211C3A-8E5C-4D03-9CF1-1ABB9513201A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaGovVote", "MetaGovVote\MetaGovVote.csproj", "{8240EFED-F688-4724-A3D5-B71BB731BD7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedModels", "SharedModels\SharedModels.csproj", "{5E4F0E77-DFA2-400E-B6D6-9751B4C4C569}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{41211C3A-8E5C-4D03-9CF1-1ABB9513201A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41211C3A-8E5C-4D03-9CF1-1ABB9513201A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41211C3A-8E5C-4D03-9CF1-1ABB9513201A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8240EFED-F688-4724-A3D5-B71BB731BD7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8240EFED-F688-4724-A3D5-B71BB731BD7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8240EFED-F688-4724-A3D5-B71BB731BD7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8240EFED-F688-4724-A3D5-B71BB731BD7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4F0E77-DFA2-400E-B6D6-9751B4C4C569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4F0E77-DFA2-400E-B6D6-9751B4C4C569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4F0E77-DFA2-400E-B6D6-9751B4C4C569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4F0E77-DFA2-400E-B6D6-9751B4C4C569}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
