@@ -6,10 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MetaGovAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     public class VoteController : Controller
     {      
-        [HttpGet]
+        [HttpPost]
         public ActionResult Test(string voteID)
         {
             return Json(new { VoteTestResult = "Vote Test good!" + voteID });

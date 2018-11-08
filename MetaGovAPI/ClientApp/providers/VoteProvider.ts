@@ -1,17 +1,17 @@
 ﻿import 'isomorphic-fetch';
 
 
-export class VoteProvider extends BaseProvider {
+export class VoteProvider {
     constructor() {
-        super();        
     }
-
-    public voteTest(id: string, onDone: Function) {
-        fetch('/Vote/Test', { body: JSON.stringify({ voteID: id }) })
-            .then(response => response.json())
-            .then(data => {
-                onDone(data.VoteTestResult);
-            });
+    
+    public voteTest(id: string): Promise<any> {
+        return fetch(`http://${window.location.host}/api/Vote/Test`, {
+            method: 'POST',
+            body: JSON.stringify({ voteID: id })
+        })
+            .then(x => x.text() as Promise<any>)
+            .catch(x => console.error(x));
     }
 
 }
